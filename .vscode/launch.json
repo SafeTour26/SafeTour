@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "SafeTour (with .env)",
+      "request": "launch",
+      "type": "dart",
+      "args": [
+        "--dart-define-from-file=.env"
+      ]
+    },
+    {
+      "name": "SafeTour (Offline Mode)",
+      "request": "launch",
+      "type": "dart"
+    }
+  ]
+}

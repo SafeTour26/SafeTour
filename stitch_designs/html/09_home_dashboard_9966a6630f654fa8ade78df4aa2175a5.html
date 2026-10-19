@@ -1,0 +1,232 @@
+<!DOCTYPE html><html class="dark" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>SafeTour - Home Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline-variant": "#424752",
+                        "on-secondary": "#003823",
+                        "surface-container-lowest": "#0e0e0e",
+                        "on-secondary-fixed-variant": "#005235",
+                        "on-surface-variant": "#c2c6d4",
+                        "on-primary-container": "#002a62",
+                        "surface-container-low": "#1c1b1b",
+                        "secondary": "#75daa8",
+                        "surface-variant": "#353534",
+                        "on-error": "#690005",
+                        "tertiary-fixed-dim": "#e7c268",
+                        "on-surface": "#e5e2e1",
+                        "primary-container": "#5e92f3",
+                        "tertiary": "#e7c268",
+                        "on-secondary-container": "#d1ffe3",
+                        "secondary-fixed-dim": "#75daa8",
+                        "primary-fixed": "#d8e2ff",
+                        "error": "#ffb4ab",
+                        "primary-fixed-dim": "#adc6ff",
+                        "on-primary": "#002e69",
+                        "background": "#131313",
+                        "inverse-primary": "#1b5bb9",
+                        "surface": "#131313",
+                        "inverse-on-surface": "#313030",
+                        "on-primary-fixed": "#001a41",
+                        "primary": "#adc6ff",
+                        "surface-tint": "#adc6ff",
+                        "surface-dim": "#131313",
+                        "inverse-surface": "#e5e2e1",
+                        "on-tertiary": "#3e2e00",
+                        "surface-container": "#201f1f",
+                        "on-secondary-fixed": "#002113",
+                        "error-container": "#93000a",
+                        "secondary-fixed": "#92f7c3",
+                        "surface-container-highest": "#353534",
+                        "on-error-container": "#ffdad6",
+                        "tertiary-fixed": "#ffdf96",
+                        "on-primary-fixed-variant": "#004494",
+                        "on-tertiary-fixed": "#251a00",
+                        "on-background": "#e5e2e1",
+                        "secondary-container": "#008056",
+                        "on-tertiary-container": "#3a2a00",
+                        "surface-bright": "#393939",
+                        "on-tertiary-fixed-variant": "#5a4400",
+                        "surface-container-high": "#2a2a2a",
+                        "tertiary-container": "#b1903c",
+                        "outline": "#8c909e"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-lg": "48px",
+                        "gutter-mobile": "16px",
+                        "base": "8px",
+                        "stack-sm": "12px",
+                        "stack-md": "24px",
+                        "margin-edge": "24px",
+                        "gutter-desktop": "24px"
+                    },
+                    "fontFamily": {
+                        "body-sm": ["Inter"],
+                        "label-md": ["Inter"],
+                        "headline-lg": ["Plus Jakarta Sans"],
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "display-lg-mobile": ["Plus Jakarta Sans"],
+                        "body-lg": ["Inter"],
+                        "display-lg": ["Plus Jakarta Sans"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "display-lg-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md antialiased min-h-screen flex flex-col md:flex-row pb-24 md:pb-0">
+<!-- TopAppBar for Mobile / Header Area -->
+<header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl border-b border-surface-variant flex justify-between items-center h-16 px-gutter-mobile md:hidden">
+<div class="flex items-center gap-2 text-primary font-headline-md text-headline-md font-bold text-on-surface">
+<img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDZaUokIGWmlr73pRwFwrPEgoU7gdougjcDDqLDu-YbeQX3az37JbLYc86VgiyIUnnWCm1-5PpbWYZUTKqX9cMSrvKJqed4lh3vITUiCUJVvmhJo-N370fIJwAhaojhuxraXOmqvcdwr6OLhN7nhC046CazQxzU_FCI92Puqv3YzFrAirphnZkta1fqoTPuiG1B5pHIi0g5vgr2kt6MMXLgt6-LRnW5wkTvhJEbCVCOkM6xjmgtvXQDVl3z7YiE74cRA" alt="SafeTour" class="w-7 h-7 object-contain">
+            SafeTour
+        </div>
+
+</header>
+<!-- Side Navigation Drawer for Desktop -->
+<aside class="hidden md:flex flex-col h-screen w-80 rounded-r-lg bg-surface-container border-r border-outline-variant shadow-xl py-stack-md z-40 sticky top-0 shrink-0">
+<div class="px-gutter-desktop mb-stack-md flex items-center gap-3">
+<img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvg4YfZg6nIBQxfvtP63U05g2ui6walApW2aOVbhezPhhPyp3L8xG6BRUQifrO9Fmua0Y13HLT2WKc7wrftBUX0L0yOoVOmZEHpVGsLkUECog__3XEDLVrW7RLpg6UNkWdGaETFW13OcdxU5CcliXs2M2L8KoMF8Y8pDD9y1WQevUEAv-Vr8rzN2YG5vdoHgy6TH6tjSzbwM7EIR1C4kl8L4kTf8QoXNvYF1xY9TZ2sD8T3GK03422pa3rQMnNpYcSmw" alt="SafeTour" class="w-8 h-8 object-contain">
+<h1 class="text-primary font-bold font-headline-md text-headline-md">SafeTour</h1>
+</div>
+<div class="px-gutter-desktop mb-stack-lg flex items-center gap-4">
+<img alt="User profile" class="w-12 h-12 rounded-full object-cover border-2 border-surface-variant" data-alt="A close-up portrait of a professional looking individual against a dark, minimalist background. The lighting is soft and cinematic, creating a feeling of calm and trust. This image fits a premium, modern UI with a deep charcoal aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvtbYAxTQbou4HQlBEHN_z7G9Cnk_rqoCLzpoj7r-7HZbn8MZonvawNYaclH6aRp0PAsm93aWyMrqEeio-GRS4WTik-SG6HbDAFD9h9fl9VA4PU2YUVClvlXckqwXGT-rkfyffNm4Hr1dd0vkMYYOFqTDoqAhEH3veXB3XFdKgAwLUHGSsM6DrSZRVP2yAGlyaJjAEqfTDFx2CtncuQp94711V11wI0YLYikwEP8nUFOpgo9hm9bBWkTWe8ZMLhnl7HCedZA3dFGA">
+<div>
+<p class="font-body-md text-body-md text-on-surface font-semibold">Alex Thompson</p>
+<p class="font-body-sm text-body-sm text-secondary flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">shield</span> Safety Level: High</p>
+<p class="font-label-md text-label-md text-tertiary mt-1">Premium Member</p>
+</div>
+</div>
+<nav class="flex-1 flex flex-col gap-2 px-2">
+<!-- Active Item: Intent mapping Home to Personal Safety/Activity context, let's treat "Personal Safety" as home -->
+<a class="bg-secondary-container text-on-secondary-container rounded-full mx-2 px-4 py-3 flex items-center gap-3 hover:opacity-80 transition-opacity" href="#">
+<span class="material-symbols-outlined text-[24px]">shield_person</span>
+<span class="font-body-md text-body-md font-semibold">Personal Safety</span>
+</a>
+<a class="text-on-surface-variant mx-2 px-4 py-3 flex items-center gap-3 hover:bg-surface-container-high transition-colors rounded-full" href="#">
+<span class="material-symbols-outlined text-[24px]">contact_emergency</span>
+<span class="font-body-md text-body-md">Emergency Contacts</span>
+</a>
+<a class="text-on-surface-variant mx-2 px-4 py-3 flex items-center gap-3 hover:bg-surface-container-high transition-colors rounded-full" href="#">
+<span class="material-symbols-outlined text-[24px]">history</span>
+<span class="font-body-md text-body-md">Activity History</span>
+</a>
+<a class="text-on-surface-variant mx-2 px-4 py-3 flex items-center gap-3 hover:bg-surface-container-high transition-colors rounded-full" href="#">
+<span class="material-symbols-outlined text-[24px]">menu_book</span>
+<span class="font-body-md text-body-md">Safety Guides</span>
+</a>
+<a class="text-on-surface-variant mx-2 px-4 py-3 flex items-center gap-3 hover:bg-surface-container-high transition-colors rounded-full mt-auto mb-4" href="#">
+<span class="material-symbols-outlined text-[24px]">verified_user</span>
+<span class="font-body-md text-body-md">Premium Settings</span>
+</a>
+</nav>
+</aside>
+<!-- Main Content Canvas -->
+<main class="flex-1 pt-20 md:pt-stack-md px-gutter-mobile md:px-gutter-desktop max-w-4xl mx-auto w-full flex flex-col gap-stack-lg">
+<!-- Status Header (Mobile mostly, duplicated concept for visual layout) -->
+<section class="flex flex-col gap-2">
+<h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface">Hello, Alex.</h2>
+<div class="inline-flex items-center gap-2 bg-secondary/10 px-4 py-2 rounded-full w-fit border border-secondary/20">
+<span class="material-symbols-outlined text-[20px] text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-md text-body-md text-secondary">You are in a High Safety area</span>
+</div>
+</section>
+<!-- SOS Button Section (Bento Grid Style) -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-stack-md"><!-- Safety Summary Card (Prominent Location & Safety Score) -->
+<div class="md:col-span-12 bg-surface rounded-[24px] border border-surface-variant p-6 flex flex-col gap-4">
+  <div class="flex justify-between items-start">
+    <div>
+      <span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest">Current Location</span>
+      <h3 class="font-headline-md text-headline-md text-on-surface mt-1">Shibuya City, Tokyo</h3>
+      <p class="font-body-sm text-body-sm text-secondary flex items-center gap-1 mt-1">
+        <span class="material-symbols-outlined text-[16px]">verified</span>
+        High Safety Area
+      </p>
+    </div>
+    <div class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full font-label-md text-label-md flex items-center gap-1">
+      <span class="material-symbols-outlined text-[16px]">trending_up</span>
+      Stable
+    </div>
+  </div>
+  <div class="flex items-end gap-3 mt-2">
+    <span class="font-display-lg text-display-lg text-secondary font-bold">8.4</span>
+    <span class="font-body-lg text-body-lg text-on-surface-variant mb-2">/ 10 Safety Score</span>
+  </div>
+  <!-- Mini Heatmap Snippet -->
+  <div class="mt-2 w-full h-32 rounded-xl overflow-hidden relative border border-outline-variant/30">
+    <img alt="Neighborhood Map" class="w-full h-full object-cover opacity-60" data-alt="A top-down view of city streets at night with soft emerald lighting indicating safe zones." data-location="Tokyo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmhuxkMPh7ZrIeO5zuYEGSD43VoOVju9NHqCVoU704p6hKakg9qSMcDY5Adxq2Pw_vndU8mqyAfoCn5ROWF_hz9pWU_Q4LSG4A-Nattkjjg4ExcRSmJSESpv0t9Cglt3z07PwwYS41jI-exH0xHMKdNIEhN_byH82kPvx4ncKuqqtmjDBbzBQWRvck6J03FSeQJEQvo3cXLvFvbnm_8kmAoQDzpFf7I6MQTCiUE5zlCYeK4Ky_JK5x0kGP3t1kA4Ekbk1qzcBjhtw">
+    <div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
+    <div class="absolute bottom-3 left-3 flex gap-2">
+      <span class="bg-surface/80 backdrop-blur-md px-2 py-1 rounded text-[10px] font-semibold text-secondary flex items-center gap-1"><span class="block w-2 h-2 rounded-full bg-secondary"></span> Safe Zone</span>
+    </div>
+  </div>
+</div>
+
+<!-- Giant SOS Button Card -->
+<div class="md:col-span-12 flex flex-col items-center justify-center py-16 bg-surface rounded-[24px] border border-surface-variant relative overflow-hidden group">
+  <div class="absolute inset-0 flex items-center justify-center opacity-20 pointer-events-none">
+    <div class="w-64 h-64 bg-error rounded-full blur-[80px]"></div>
+  </div>
+  <button class="relative z-10 w-48 h-48 rounded-full bg-surface-container-high border-2 border-error/30 flex flex-col items-center justify-center gap-3 shadow-[0px_10px_40px_rgba(255,180,171,0.15)] hover:shadow-[0px_10px_60px_rgba(255,180,171,0.3)] transition-all duration-300 active:scale-95 group-hover:border-error/50">
+    <span class="material-symbols-outlined text-[48px] text-error" style="font-variation-settings: 'FILL' 1;">sos</span>
+    <span class="font-headline-md text-headline-md text-on-surface tracking-wide">HOLD</span>
+    <span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest">For SOS</span>
+  </button>
+</div></section>
+</main>
+<!-- BottomNavBar for Mobile -->
+<nav class="fixed bottom-0 left-0 w-full h-20 flex justify-around items-center px-4 pb-safe bg-surface/85 backdrop-blur-xl border-t border-surface-variant shadow-lg z-50 md:hidden rounded-t-lg">
+<!-- Active: Home -->
+<a class="flex flex-col items-center justify-center text-primary font-bold hover:opacity-80 transition-opacity scale-90" href="#">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">home_app_logo</span>
+<span class="font-label-md text-label-md mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-[24px]">map</span>
+<span class="font-label-md text-label-md mt-1">Map</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[24px]">group</span>
+<span class="font-label-md text-label-md mt-1">Friends</span></a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-[24px]">person</span>
+<span class="font-label-md text-label-md mt-1">Profile</span>
+</a>
+</nav>
+
+
+
+
+
+
+</body></html>

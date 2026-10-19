@@ -1,0 +1,11 @@
+{
+  "name": "SafeTour Bengaluru",
+  "short_name": "SafeTour",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#131313",
+  "theme_color": "#131313",
+  "description": "SafeTour - Bengaluru Safety Application",
+  "orientation": "portrait-primary",
+  "prefer_related_applications": false
+}

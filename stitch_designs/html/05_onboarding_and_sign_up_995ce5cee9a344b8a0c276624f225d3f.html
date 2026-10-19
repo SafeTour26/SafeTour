@@ -1,0 +1,298 @@
+<!DOCTYPE html><html class="dark" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>SafeTour - Onboarding</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline-variant": "#424752",
+                        "on-secondary": "#003823",
+                        "surface-container-lowest": "#0e0e0e",
+                        "on-secondary-fixed-variant": "#005235",
+                        "on-surface-variant": "#c2c6d4",
+                        "on-primary-container": "#002a62",
+                        "surface-container-low": "#1c1b1b",
+                        "secondary": "#75daa8",
+                        "surface-variant": "#353534",
+                        "on-error": "#690005",
+                        "tertiary-fixed-dim": "#e7c268",
+                        "on-surface": "#e5e2e1",
+                        "primary-container": "#5e92f3",
+                        "tertiary": "#e7c268",
+                        "on-secondary-container": "#d1ffe3",
+                        "secondary-fixed-dim": "#75daa8",
+                        "primary-fixed": "#d8e2ff",
+                        "error": "#ffb4ab",
+                        "primary-fixed-dim": "#adc6ff",
+                        "on-primary": "#002e69",
+                        "background": "#131313",
+                        "inverse-primary": "#1b5bb9",
+                        "surface": "#131313",
+                        "inverse-on-surface": "#313030",
+                        "on-primary-fixed": "#001a41",
+                        "primary": "#adc6ff",
+                        "surface-tint": "#adc6ff",
+                        "surface-dim": "#131313",
+                        "inverse-surface": "#e5e2e1",
+                        "on-tertiary": "#3e2e00",
+                        "surface-container": "#201f1f",
+                        "on-secondary-fixed": "#002113",
+                        "error-container": "#93000a",
+                        "secondary-fixed": "#92f7c3",
+                        "surface-container-highest": "#353534",
+                        "on-error-container": "#ffdad6",
+                        "tertiary-fixed": "#ffdf96",
+                        "on-primary-fixed-variant": "#004494",
+                        "on-tertiary-fixed": "#251a00",
+                        "on-background": "#e5e2e1",
+                        "secondary-container": "#008056",
+                        "on-tertiary-container": "#3a2a00",
+                        "surface-bright": "#393939",
+                        "on-tertiary-fixed-variant": "#5a4400",
+                        "surface-container-high": "#2a2a2a",
+                        "tertiary-container": "#b1903c",
+                        "outline": "#8c909e"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-lg": "48px",
+                        "gutter-mobile": "16px",
+                        "base": "8px",
+                        "stack-sm": "12px",
+                        "stack-md": "24px",
+                        "margin-edge": "24px",
+                        "gutter-desktop": "24px"
+                    },
+                    "fontFamily": {
+                        "body-sm": ["Inter"],
+                        "label-md": ["Inter"],
+                        "headline-lg": ["Plus Jakarta Sans"],
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "display-lg-mobile": ["Plus Jakarta Sans"],
+                        "body-lg": ["Inter"],
+                        "display-lg": ["Plus Jakarta Sans"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                        "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "display-lg-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col relative overflow-hidden font-body-md antialiased">
+<!-- Top Navigation (Suppressed per logic for Onboarding) -->
+<!-- Bottom Navigation (Suppressed per logic for Onboarding) -->
+<!-- Main Content Canvas -->
+<main class="flex-grow flex flex-col relative z-10 w-full max-w-md mx-auto md:max-w-4xl h-screen">
+<!-- Hero Image / Visual -->
+<div class="relative flex-grow w-full h-[530px] md:h-[618px] rounded-b-xl overflow-hidden shadow-[0px_10px_30px_rgba(0,0,0,0.5)] z-0">
+<img alt="Dark map visual" class="absolute inset-0 w-full h-full object-cover" data-alt="A highly detailed, high-quality dark mode map visual showcasing a sprawling metropolis at night. The map lines are subtly illuminated with soft glowing accents in muted blues and emerald greens, conveying a sense of technological sophistication and safety. The overall aesthetic is minimalist and modern, with deep blacks and subtle tonal variations in the dark surface layers. The scene evokes a feeling of quiet intelligence, reassurance, and premium navigation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVLRNO_vjksYqfYuPDWi6j_vZ2zrlsj6mgl3yR0IyQSq1DgmrEsdFCV9IJc8gIUTwsDjg_jrUeO-ZU-8XL6FmkhoDAvQHwMGSRrUndNmVbfTMuWK3m1Aq1unKJq5d0CCFXbKq40oStmYUj5Oy8XH4-OigNSXTQLL0QK-fL_Cv9Qa8sqPiHc9yEnMiMqeou2gXJt1ntJTDSS3gj9pzLiAVyrFlNlnE8fX2YFhG6vwmeO2TkWeFTiXRSbdNm6Ww75v3HieM3vHgjnI4">
+<!-- Subtle Blue Gradient Overlay -->
+<div class="absolute inset-0 bg-gradient-to-b from-background/10 via-background/40 to-background"></div>
+<!-- SafeTour Branding -->
+<div class="absolute top-gutter-mobile left-gutter-mobile md:top-gutter-desktop md:left-gutter-desktop flex items-center gap-base">
+<img src="https://lh3.googleusercontent.com/aida-public/AB6AXuACiqU7HVnV8FIdIn8cxFV8ZTjhiTHH6bH7ygM4e7M29gcYpK-ismFKCNXLy3Um58G8ZvA3OSmO-HfwGZ9nzDfS_zIlTkz_AkoA6rlLr40RPOMg9L5jXI50pV04wN7DRUxdfUYaBBcD4jX7zwAgKY8l4KS_ZdqXJpqMuXVEuljJp3Dh_eZJ2ZOEk6W2embpezMsBTaMg9YtEifa22qEzNBZQMKVb78cU44MkhTPp-Eb94XJofP-4x8cSUcQGCpijJc6Pw" alt="SafeTour" class="w-8 h-8 object-contain">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">SafeTour</span>
+</div>
+</div>
+<!-- Content Area -->
+<div class="flex-shrink-0 px-margin-edge pb-margin-edge pt-stack-md flex flex-col items-center text-center bg-background relative z-10 -mt-10 rounded-t-xl"><!-- Progress Indicators (Hidden on Step 5 / Auth) -->
+<div class="flex gap-2 mb-stack-md transition-all duration-300" id="step-dots">
+<div class="dot-pill w-8 h-1 rounded-full bg-primary transition-all duration-300"></div>
+<div class="dot-pill w-2 h-1 rounded-full bg-surface-variant transition-all duration-300"></div>
+<div class="dot-pill w-2 h-1 rounded-full bg-surface-variant transition-all duration-300"></div>
+<div class="dot-pill w-2 h-1 rounded-full bg-surface-variant transition-all duration-300"></div>
+</div>
+<!-- Slide Carousel Wrapper -->
+<div class="w-full max-w-sm flex flex-col items-center">
+<!-- Slide 1 -->
+<div class="slide-item w-full flex flex-col items-center transition-all duration-300" data-step="1">
+<div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-surface-container-high border border-outline-variant mb-4 text-primary">
+<span class="material-symbols-outlined text-2xl">verified_user</span>
+</div>
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-on-surface mb-stack-sm w-full">
+            Travel with peace of mind.
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-lg">
+            SafeTour provides real-time safety insights and instant emergency support wherever you are.
+        </p>
+</div>
+<!-- Slide 2 -->
+<div class="slide-item w-full flex flex-col items-center transition-all duration-300 hidden opacity-0" data-step="2">
+<div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-surface-container-high border border-error/30 mb-4 text-error">
+<span class="material-symbols-outlined text-2xl">emergency_share</span>
+</div>
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-on-surface mb-stack-sm w-full">
+            SOS Emergency Trigger.
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-lg">
+            One-tap discreet alert dispatches your coordinates to local responders and designated safety contacts.
+        </p>
+</div>
+<!-- Slide 3 -->
+<div class="slide-item w-full flex flex-col items-center transition-all duration-300 hidden opacity-0" data-step="3">
+<div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-surface-container-high border border-secondary/30 mb-4 text-secondary">
+<span class="material-symbols-outlined text-2xl">share_location</span>
+</div>
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-on-surface mb-stack-sm w-full">
+            Live Sharing.
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-lg">
+            Keep loved ones updated automatically with encrypted live trip tracking and arrival check-ins.
+        </p>
+</div>
+<!-- Slide 4 -->
+<div class="slide-item w-full flex flex-col items-center transition-all duration-300 hidden opacity-0" data-step="4">
+<div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-surface-container-high border border-tertiary/30 mb-4 text-tertiary">
+<span class="material-symbols-outlined text-2xl">map</span>
+</div>
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-on-surface mb-stack-sm w-full">
+            Safety Heatmap.
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-lg">
+            Navigate safely with crowd-sourced nighttime lighting scores, crowd density, and verified safe zones.
+        </p>
+</div>
+<!-- Slide 5: Auth / Sign Up & Login -->
+<div class="slide-item w-full flex flex-col items-center transition-all duration-300 hidden opacity-0" data-step="5">
+<h1 class="font-display-lg-mobile text-[28px] md:font-display-lg md:text-display-lg text-on-surface mb-2 w-full">
+            Start Exploring Safely
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+            Create your account or sign in to activate 24/7 personal travel protection.
+        </p>
+<!-- Social Auth Buttons -->
+<div class="w-full flex flex-col gap-3 mb-5">
+<button class="w-full py-3.5 px-4 rounded-full bg-surface-container-high hover:bg-surface-bright transition-colors border border-outline-variant flex items-center justify-center gap-3 text-on-surface font-semibold text-sm">
+<svg class="w-4 h-4 fill-current" viewBox="0 0 170 170"><path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.75 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.35.13-9.16-1.9-14.42-6.08-3.69-3.04-7.67-7.81-11.96-14.31-6.73-10.22-12.03-21.84-15.9-34.86-3.87-13.01-5.81-25.13-5.81-36.35 0-14.99 3.8-27.42 11.41-37.3 7.6-9.87 17.15-14.93 28.65-15.17 4.58 0 9.87 1.25 15.86 3.76 5.99 2.5 9.87 3.86 11.66 4.07 1.34-.21 5.37-1.63 12.09-4.24 6.72-2.61 12.28-3.79 16.69-3.53 12.98.65 23.36 5.38 31.13 14.2-11.33 6.84-16.89 16.3-16.69 28.37.21 9.46 3.85 17.43 10.92 23.91 7.07 6.48 15.39 10.27 24.96 11.37-2.18 6.53-4.82 12.73-7.92 18.6m-24.62-106.9c0-6.19 2.23-12.18 6.69-17.96 4.46-5.78 10.02-9.68 16.68-11.7-.87 6.08-3.16 11.9-6.86 17.47-3.7 5.57-8.76 9.5-15.18 11.78-.44-.54-.88-1.07-1.33-1.59z"></path></svg>
+<span class="">Continue with Apple</span>
+</button>
+<button class="w-full py-3.5 px-4 rounded-full bg-surface-container-high hover:bg-surface-bright transition-colors border border-outline-variant flex items-center justify-center gap-3 text-on-surface font-semibold text-sm">
+<svg class="w-4 h-4" viewBox="0 0 24 24"><path d="M12 5c1.6 0 3 .6 4.1 1.7l3.1-3.1C17.3 1.8 14.8 1 12 1 7.5 1 3.7 3.6 1.9 7.3l3.7 2.9C6.5 7.4 9 5 12 5z" fill="#EA4335"></path><path d="M23.5 12.3c0-.8-.1-1.6-.2-2.3H12v4.6h6.5c-.3 1.5-1.1 2.8-2.4 3.7l3.7 2.9c2.2-2 3.7-5 3.7-8.9z" fill="#4285F4"></path><path d="M5.6 14.8c-.2-.7-.4-1.5-.4-2.3s.1-1.6.4-2.3L1.9 7.3C.7 9.7 0 12.3 0 15.2c0 2.8.7 5.5 1.9 7.9l3.7-2.9z" fill="#FBBC05"></path><path d="M12 23.5c3.2 0 6-1.1 8-3l-3.7-2.9c-1.1.7-2.5 1.2-4.3 1.2-3 0-5.5-2-6.4-4.8L1.9 17c1.8 3.7 5.6 6.5 10.1 6.5z" fill="#34A853"></path></svg>
+<span class="">Continue with Google</span>
+</button>
+</div>
+<div class="w-full flex items-center gap-3 my-2 text-xs text-outline">
+<div class="flex-1 h-[1px] bg-outline-variant/60"></div>
+<span class="">or continue with email</span>
+<div class="flex-1 h-[1px] bg-outline-variant/60"></div>
+</div>
+<div class="w-full flex flex-col gap-2.5 mt-2 mb-4 text-left">
+<input class="w-full px-4 py-3 rounded-full bg-surface-container-low border border-outline-variant text-on-surface placeholder:text-outline text-sm focus:outline-none focus:border-primary transition-colors" placeholder="Enter email or phone number" type="email">
+<button class="w-full py-3.5 rounded-full bg-primary text-on-primary font-semibold text-sm hover:brightness-110 transition-all flex items-center justify-center gap-2">
+<span class="">Get Started</span>
+<span class="material-symbols-outlined text-sm font-bold">arrow_forward</span>
+</button>
+</div>
+<p class="text-[11px] text-outline text-center leading-relaxed">
+            By continuing, you agree to SafeTour's <a class="underline text-on-surface-variant" href="#">Terms</a> &amp; <a class="underline text-on-surface-variant" href="#">Privacy Policy</a>.
+        </p>
+</div>
+</div>
+<!-- Navigation Controls (For Steps 1-4) -->
+<div class="w-full max-w-sm flex flex-col items-center gap-3 mt-4" id="carousel-controls">
+<button class="w-full py-4 rounded-full bg-surface-container-high hover:bg-surface-bright transition-colors duration-300 border border-outline-variant flex justify-center items-center gap-base shadow-lg group" id="btn-next">
+<span class="font-body-md text-body-md font-semibold text-on-surface" id="btn-next-label">Next</span>
+<span class="material-symbols-outlined text-on-surface group-hover:translate-x-1 transition-transform duration-300">arrow_forward</span>
+</button>
+<button class="text-body-sm font-body-sm text-outline hover:text-on-surface transition-colors py-1" id="btn-skip">
+        Skip to Sign In
+    </button>
+</div></div>
+</main>
+<script>
+(function() {
+    let currentStep = 1;
+    const totalSlides = 4;
+    const btnNext = document.getElementById('btn-next');
+    const btnSkip = document.getElementById('btn-skip');
+    const btnNextLabel = document.getElementById('btn-next-label');
+    const slides = document.querySelectorAll('.slide-item');
+    const dots = document.querySelectorAll('.dot-pill');
+    const dotsContainer = document.getElementById('step-dots');
+    const controlsContainer = document.getElementById('carousel-controls');
+
+    function updateSlide(step) {
+        currentStep = step;
+        
+        slides.forEach(slide => {
+            const sNum = parseInt(slide.getAttribute('data-step'), 10);
+            if (sNum === currentStep) {
+                slide.classList.remove('hidden');
+                setTimeout(() => slide.classList.remove('opacity-0'), 10);
+            } else {
+                slide.classList.add('opacity-0');
+                slide.classList.add('hidden');
+            }
+        });
+
+        if (currentStep <= totalSlides) {
+            dotsContainer.classList.remove('hidden');
+            controlsContainer.classList.remove('hidden');
+            dots.forEach((dot, index) => {
+                if (index === currentStep - 1) {
+                    dot.className = 'dot-pill w-8 h-1 rounded-full bg-primary transition-all duration-300';
+                } else {
+                    dot.className = 'dot-pill w-2 h-1 rounded-full bg-surface-variant transition-all duration-300';
+                }
+            });
+            if (currentStep === totalSlides) {
+                btnNextLabel.textContent = 'Get Started';
+            } else {
+                btnNextLabel.textContent = 'Next';
+            }
+        } else {
+            // Step 5: Auth screen
+            dotsContainer.classList.add('hidden');
+            controlsContainer.classList.add('hidden');
+        }
+    }
+
+    if (btnNext) {
+        btnNext.addEventListener('click', () => {
+            if (currentStep < 5) {
+                updateSlide(currentStep + 1);
+            }
+        });
+    }
+
+    if (btnSkip) {
+        btnSkip.addEventListener('click', () => {
+            updateSlide(5);
+        });
+    }
+})();
+</script>
+
+</body></html>
