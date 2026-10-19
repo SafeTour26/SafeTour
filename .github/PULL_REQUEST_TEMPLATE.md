@@ -1,15 +1,15 @@
-## 📝 Description
+## Description
 Provide a brief summary of the changes made and the motivation behind them.
 
-## 🎯 Related Issue
+## Related Issue
 Fixes #(issue number) or relates to #(issue number)
 
-## 📸 Screenshots (if applicable)
+## Screenshots (if applicable)
 | Before | After |
 |--------|-------|
 |        |       |
 
-## ✅ Checklist
+## Checklist
 - [ ] My code follows the project's style guidelines (`dart format .`)
 - [ ] I have run `flutter analyze` and resolved any warnings
 - [ ] I have run `flutter test` and all tests pass
